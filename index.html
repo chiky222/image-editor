@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Testing canvas</title>
+    </head>
+    <body>
+        <div class="bttn">
+            <button class="bttn-element-ini" onclick=app.loadPicture()>INICIAR</button>
+            <button class="bttn-element" onclick=app.filters.bw()>B & W</button>
+            <button class="bttn-element" onclick=app.filters.invert()>NEGATIVO</button>
+            <button class="bttn-element" onclick=app.filters.sepia()>SEPIA</button>
+            <button class="bttn-element" onclick=app.filters.contrast()>CONTRASTE</button>
+            <button class="bttn-element" onclick=app.filters.rgbMix()>RGB MIX</button>
+            <button class="bttn-element" onclick=app.filters.ctrBrillo()>MAGIC</button>
+            <button class="bttn-element" onclick=app.filters.cambioColor()>CAMBIO COLOR</button>
+            <button class="bttn-element" onclick=app.filters.cambioColor2()>CAMBIO COLOR 2</button>
+            <button class="bttn-element" onclick=app.filters.brillo()>BRILLO</button>
+            <button class="bttn-element" onclick=app.filters.onlyBlue()>ONLY BLUE</button>
+            <button class="bttn-element" onclick=app.filters.onlyRed()>ONLY RED</button>
+            <button class="bttn-element" onclick=app.filters.onlyGreen()>ONLY GREEN</button>
+            <button class="bttn-element" onclick=app.filters.onlyYellow()>ONLY YELLOW</button>
+            <button class="bttn-element" onclick=app.filters.onlyMagenta()>ONLY MAGENTA</button>
+            <button class="bttn-element" onclick=app.filters.darkAlpha()>ALPHA DARK</button>
+            <button class="bttn-element" onclick=app.filters.lightAlpha()>ALPHA LIGHT</button>
+            <button class="bttn-element" onclick=app.filters.blackToColor()>BLACK TO COLOR</button>
+            <button class="bttn-element-ini" onclick=app.save()>DESCARGAR</button>
+        </div> 
+        <div class="selector" id="src-file1">
+            <input type="file" id="seleccionArchivos" accept="image/*">
+            <input type="color" id="input-color">
+        </div>
+        <div id="main">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="input-image">
+        </div>
+        <script type="text/javascript" src="./src/main.js"></script>
+    </body>
+</html>

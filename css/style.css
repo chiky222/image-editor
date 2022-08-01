@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*CANVAS*/
+
+body{
+    background: #071443;
+}
+#main{
+    margin-top: 10px;
+    text-align: center;
+}
+#canvas{
+    background-color: rgb(0, 0, 26);
+}
+
+/*BOTONES*/
+
+.bttn{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97vw;
+    height: 70px;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.bttn-element{
+    width: 90px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #DBA809;
+    color: black;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    border: solid 2px #03091f;
+    overflow: hidden;  
+    cursor: pointer;
+}
+
+.bttn-element-ini{
+    width: 115px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #7da8ff;
+    color: black;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    border: solid 2px #03091f;
+    cursor: pointer;
+}
+
+.bttn-element:hover{
+    background-color: rgb(167, 99, 4);
+    color: black;
+}
+
+.bttn-element-ini:hover{
+    background-color: rgb(70, 45, 233);
+    color: black;
+}
+
+.selector{
+    height: 35px;
+    width: 97vw;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.selector::before {
+    background-color: #7da8ff;
+    height: 40px;
+    width: 140px;
+    color: black;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 2px #03091f;
+    content: 'Seleccionar'; /* texto por defecto */
+    margin: 0 auto;
+    padding: 7px;
+    cursor: pointer;
+}
+  
+.selector input[type="file"] {
+    opacity: 0;
+    width: 120px;
+    height: 32px;
+    margin: 0 auto 0 -127px;
+    cursor: pointer;
+}
+
+#input-color{
+    padding: 2px;
+    background-color: rgb(160, 166, 255);
+    margin-left: 20px;
+}
+  
+#src-file1::before {
+    content: 'Subir Imágen';
+}
+
+@media (max-width: 1000px){   
+    .selector{
+        margin-top: 140px;
+    }
+
+    .bttn{
+        width: 97vw;
+    }
+
+    #canvas{
+        width: 75%;
+    }
+}
+
+@media (max-width: 681px){   
+    .selector{
+        margin-top: 185px;
+    }
+
+    .bttn{
+        width: 97vw;
+    }
+
+    #canvas{
+        width: 75%;
+    }
+}
+
+@media (max-width: 512px){   
+    .selector{
+        margin-top: 300px;
+    }
+
+    .bttn{
+        width: 97vw;
+    }
+
+    #canvas{
+        width: 75%;
+    }
+}
+
+@media (max-width: 387px){   
+    .selector{
+        margin-top: 350px;
+    }
+
+    .bttn{
+        width: 97vw;
+    }
+
+    #canvas{
+        width: 75%;
+    }
+}
